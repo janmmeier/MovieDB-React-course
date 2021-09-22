@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef} from 'react';
+import { useState, useEffect} from 'react';
 // API
 import API from '../API';
 
@@ -11,7 +11,7 @@ const initialState = {
 
 export const useHomeFetch = () => {
     
-    const [state, setState] = useState();
+    const [state, setState] = useState(initialState);
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(false);
 
